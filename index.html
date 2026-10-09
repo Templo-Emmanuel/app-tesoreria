@@ -10,7 +10,7 @@
 <div id="app" class="hide">
 <header><div class="logo">Tesorería<b>Emmanuel</b></div>
 <div class="srch"><span id="sico"></span><input id="q" placeholder="Buscar miembro…" onkeydown="if(event.key==='Enter'){Q=this.value;go('mem')}"></div>
-<div class="hr"><span class="sub" id="st"></span><button class="ib" onclick="goM(prevM(MS()))">‹</button><input type="month" id="mes" onchange="render()"><button class="ib" onclick="nextM()">›</button><div class="av" onclick="logout()" title="Cerrar sesión">T</div></div></header>
+<div class="hr"><span class="sub" id="st"></span><button class="ib" onclick="goM(prevM(MS()))">‹</button><input type="month" id="mes" onchange="goM(this.value)"><button class="ib" onclick="nextM()">›</button><div class="av" onclick="logout()" title="Cerrar sesión">T</div></div></header>
 <nav id="nav"></nav><main id="view"></main></div>
 <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.45.4/dist/umd/supabase.js"></script>
 <script src="js/config.js"></script><script src="js/app.js"></script></body></html>
